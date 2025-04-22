@@ -93,7 +93,7 @@ public:
         this->dict = new Dictionary<Pair<int, int>, T>(Pair<int,int>(0,0), m.Get(0,0), asc);
         for (int i = 0; i < m.GetRows(); i++)
         {
-            for (int j = 0; j < m.GetColumns(); i++)
+            for (int j = 0; j < m.GetColumns(); j++)
             {
                 this->set(i, j, m.Get(i, j));
             }

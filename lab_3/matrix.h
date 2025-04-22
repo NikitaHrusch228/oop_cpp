@@ -146,7 +146,7 @@ public:
 				T sum = 0;
 				for (int k = 0; k < this->columns; k++)
 				{
-					sum = sum + (T)(this.Get(i, k)) + (T)(two.get(k, j));
+					sum += Get(i, k) * other.Get(k, j);
 				}
 				result.Set(sum, i, j);
 			}
