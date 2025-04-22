@@ -1,8 +1,6 @@
 #include "Sequences.h"
 #include "LinkedList.h"
 
-// Аннотация
-// Реализуем интерфейс ISorter и 3 сортировки - пузырьком, быстрая, сортировка Шелла
 template<typename T>
 class ISorter {
 public:

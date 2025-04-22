@@ -9,7 +9,7 @@ public:
 
     LinkedListSequence() : data() {} // Пусто
 
-    LinkedListSequence<T> *Clone() override { return new LinkedListSequence<T>(); } // бахаем копию последовательности
+    LinkedListSequence<T> *Clone() override { return new LinkedListSequence<T>(); } // копия последовательности
 
     LinkedListSequence<T> *CreateZeroSequence(int count) override {
         return new LinkedListSequence<T>(count); // создание пустой последовательности
@@ -39,7 +39,7 @@ public:
         data = *tmp;
     }
 // Получение подпоследовательности
-    LinkedListSequence<T> *GetSubsequence(int startIndex, int endIndex) {//вернуть Sequence<T>*
+    LinkedListSequence<T> *GetSubsequence(int startIndex, int endIndex) {
         LinkedList<T> *tmp = data.GetSubLinkedList(startIndex, endIndex);//создаем экземляр с указанными индексами
         T *items;
         items = (T *) malloc(sizeof(T *) * (endIndex - startIndex));
