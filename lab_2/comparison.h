@@ -1,6 +1,4 @@
 #pragma once
-// Аннотация
-// Здесь описываем компараторы, которые используем потом в сортировках
 #include "Sequences.h"
 
 template<typename T>
